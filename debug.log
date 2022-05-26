@@ -2,3 +2,5 @@
 [0520/173231.932:ERROR:icu_util.cc(249)] Couldn't mmap icu data file
 [0520/173239.162:ERROR:icu_util.cc(249)] Couldn't mmap icu data file
 [0520/173310.065:ERROR:icu_util.cc(249)] Couldn't mmap icu data file
+[0526/131214.893:ERROR:icu_util.cc(249)] Couldn't mmap icu data file
+[0526/131219.146:ERROR:icu_util.cc(249)] Couldn't mmap icu data file

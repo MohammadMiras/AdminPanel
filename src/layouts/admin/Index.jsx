@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import { useContext } from "react";
 import { AdminContext, AdminContextContainer } from "../../context/adminLayoutContext";
+import Dashboard from "../../pages/dashboard/Dashboard";
 
 import Header from "./header/index";
 
@@ -11,8 +12,8 @@ const Index = () => {
         <AdminContextContainer>
             <Header />
 
-            <section id="content_section " className={`bg-light py-2 px-3 ${showSlider ? "with_sidebar": null}`}>
-                
+            <section id="content_section" className={`bg-light py-2 px-3 ${showSlider ? "with_sidebar": null}`}>
+                <Dashboard/>
             </section>
         </AdminContextContainer>
     );
