@@ -1,8 +1,6 @@
 import ProductTable from "./ProductTable";
 import Pageination from "./Pagination";
 import AddProduct from "./AddProduct";
-import ModalContainer from "../../components/ModalContainer";
-
 const Product = () => {
 
     return (
@@ -24,8 +22,7 @@ const Product = () => {
                     </div>
                 </div>
                 <ProductTable />
-                <Pageination />
-                
+                <Pageination />                
                 <AddProduct />
 
             </div>
