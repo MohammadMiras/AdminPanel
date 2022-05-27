@@ -1,13 +1,14 @@
 import ProductTable from "./ProductTable";
 import Pageination from "./Pagination";
 import AddProduct from "./AddProduct";
+import ModalContainer from "../../components/ModalContainer";
 
 const Product = () => {
 
     return (
         <>
             <div id="manage_product_section" className="manage_product_section main_section ">
-                <h4 classNameName="text-center my-3">مدیریت محصولات</h4>
+                <h4 className="text-center my-3">مدیریت محصولات</h4>
                 <div className="row justify-content-between">
                     <div className="col-10 col-md-6 col-lg-4">
                         <div className="input-group mb-3 dir_ltr" >
@@ -24,8 +25,10 @@ const Product = () => {
                 </div>
                 <ProductTable />
                 <Pageination />
+                
+                <AddProduct />
+
             </div>
-            
         </>
     );
 }

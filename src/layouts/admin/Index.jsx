@@ -15,10 +15,12 @@ const Index = () => {
             <Header />
 
             <section id="content_section" className={`bg-light py-2 px-3 ${showSlider ? "with_sidebar": null}`}>
+                
                 {/* <Dashboard/> */}
                 <Product/>
             </section>
-            <AddProduct/>
+            
+            
         </AdminContextContainer>
     );
 }

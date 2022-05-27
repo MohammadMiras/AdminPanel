@@ -192,10 +192,15 @@ td , th {
     top: 64px;
     height: calc(100vh - 64px);
     padding: 0;
+    z-index: 2;
      
 }
-.zindex-2{
-    z-index:2;
+
+.zindex-2000{
+    z-index:2000;
+}
+.fixed-top{
+    z-index: 2;
 }
 #sidebar_section .mini_sidebar{
     width: 70px;
@@ -302,7 +307,7 @@ td , th {
     overflow: auto;
     transition: all 300ms ease;
     background: url(/assets/images/body_back4.png) repeat;
-    z-index: -1;
+    z-index: 1;
 }
 #content_section.with_sidebar{
     width: calc(100% - 250px);
