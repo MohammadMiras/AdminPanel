@@ -91,6 +91,10 @@ body{
 .dir_ltr{
     direction: ltr !important;
 }
+.modal-backdrop{
+    display: none;
+}
+
 
 .w_6rem{
     width: 6rem !important;
@@ -188,7 +192,10 @@ td , th {
     top: 64px;
     height: calc(100vh - 64px);
     padding: 0;
-    z-index: 1000;
+     
+}
+.zindex-2{
+    z-index:2;
 }
 #sidebar_section .mini_sidebar{
     width: 70px;
@@ -295,6 +302,7 @@ td , th {
     overflow: auto;
     transition: all 300ms ease;
     background: url(/assets/images/body_back4.png) repeat;
+    z-index: -1;
 }
 #content_section.with_sidebar{
     width: calc(100% - 250px);

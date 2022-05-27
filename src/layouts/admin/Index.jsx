@@ -3,6 +3,8 @@
 import { useContext } from "react";
 import { AdminContext, AdminContextContainer } from "../../context/adminLayoutContext";
 import Dashboard from "../../pages/dashboard/Dashboard";
+import AddProduct from "../../pages/Product/AddProduct";
+import Product from "../../pages/Product/Product";
 
 import Header from "./header/index";
 
@@ -13,8 +15,10 @@ const Index = () => {
             <Header />
 
             <section id="content_section" className={`bg-light py-2 px-3 ${showSlider ? "with_sidebar": null}`}>
-                <Dashboard/>
+                {/* <Dashboard/> */}
+                <Product/>
             </section>
+            <AddProduct/>
         </AdminContextContainer>
     );
 }
