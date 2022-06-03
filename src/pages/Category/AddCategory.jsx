@@ -38,7 +38,7 @@ import ModalContainer from "../../components/ModalContainer";
                         <div className="col-12 col-md-6 col-lg-8 row justify-content-center">
                             <div className="form-check form-switch col-5 col-md-2">
                                 <input className="form-check-input pointer" type="checkbox" id="flexSwitchCheckDefault" />
-                                <label className="form-check-label pointer" for="flexSwitchCheckDefault">وضعیت فعال</label>
+                                <label className="form-check-label pointer" htmlFor="flexSwitchCheckDefault">وضعیت فعال</label>
                             </div>
                         </div>
                         <div className="btn_box text-center col-12 col-md-6 col-lg-8 mt-4">

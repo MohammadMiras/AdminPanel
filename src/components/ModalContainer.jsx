@@ -2,16 +2,11 @@ import React from "react";
 import { createPortal } from "react-dom"
 
 const ModalContainer = ({ children,id,title,fullscreen}) => {
-    console.log(id)
-    console.log(title)
-    console.log(fullscreen)
-    console.log(children)
     return createPortal(
         <>
             <div
                 className="modal fade zindex-2"
-                id={id}
-                
+                id={id}               
                 aria-hidden="true"
             >
                 <div className={`modal-dialog ${fullscreen ? "modal-fullscreen" : null}`}>
