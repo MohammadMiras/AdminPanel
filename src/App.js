@@ -1,10 +1,13 @@
 import Index from "./layouts/admin/Index";
+import {BrowserRouter} from 'react-router-dom';
 
 function App() {
   return (
-    <Index>
+    <BrowserRouter>
+    <Index/>
+    </BrowserRouter>
 
-    </Index>
+    
   );
 }
 

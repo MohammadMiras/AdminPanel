@@ -1,42 +1,52 @@
-const ProductTable =()=>{
-    return(
-        <table className="table table-responsive text-center table-hover table-bordered">
-            <thead className="table-secondary">
-                <tr>
-                    <th>#</th>
-                    <th>دسته</th>
-                    <th>عنوان</th>
-                    <th>قیمت</th>
-                    <th>موجودی</th>
-                    <th>تعداد لایک</th>
-                    <th>وضعیت</th>
-                    <th>عملیات</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>دسته شماره فلان</td>
-                    <td>محصول شماره1</td>
-                    <td>20,000 تومان</td>
-                    <td>10</td>
-                    <td>
-                        <span className="text-success mx-2">30</span>
-                        <span className="text-danger mx-2">10</span>
-                    </td>
-                    <td>فعال</td>
-                    <td>
-                        <i className="fas fa-edit text-warning mx-1 hoverable_text pointer has_tooltip"
-                            title="ویرایش محصول" data-bs-toggle="modal" data-bs-placement="top"
-                            data-bs-target="#add_product_modal"></i>
-                        <i className="fas fa-receipt text-info mx-1 hoverable_text pointer has_tooltip"
-                            title="ثبت ویژگی" data-bs-toggle="modal" data-bs-target="#add_product_attr_modal"></i>
-                        <i className="fas fa-times text-danger mx-1 hoverable_text pointer has_tooltip"
-                            title="حذف محصول" data-bs-toggle="tooltip" data-bs-placement="top"></i>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+import Table from "../../components/Table";
+import { datainfoProduct, Fieldoperation, FilterSearchCategory } from "../../Models/Table/TableFields"
+const ProductTable = () => {
+    let data = [
+        {
+            id: 1,
+            title: "product 1",
+            category: "category 1",
+            price: "200",
+            stock: "12",
+            numLike: "10",
+            status: 1
+        },
+        {
+            id: 3,
+            title: "product 3",
+            category: "category 1",
+            price: "200",
+            stock: "12",
+            numLike: "10",
+            status: 1
+        },
+        {
+            id: 2,
+            title: "product 2",
+            category: "category 1",
+            price: "200",
+            stock: "12",
+            numLike: "10",
+            status: 0
+        }
+
+    ]
+    const addFieldoperation =
+    {
+        title: "عملیات",
+        element: (num) => Fieldoperation(num)
+    }
+
+
+    return (
+        <Table data={data} datainfo={datainfoProduct} addFieldoperation={addFieldoperation} filterSearch={FilterSearchCategory}>
+
+            <button className="btn btn-success d-flex justify-content-center align-items-center"
+                data-bs-toggle="modal" data-bs-target="#add_product_modal">
+                <i className="fas fa-plus text-light"></i>
+            </button>
+
+        </Table>
     )
 }
- export default ProductTable;
+export default ProductTable;

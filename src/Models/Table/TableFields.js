@@ -1,8 +1,8 @@
 export const datainfoCategory =[
-                            {field:"id" , title:"#"},
-                            {field:"title" , title:"عنوان"},
-                            {field:"status" , title:"وضعیت"}
-                        ]
+                                 {field:"id" , title:"#"},
+                                 {field:"title" , title:"عنوان"},
+                                 {field:"status" , title:"وضعیت"}
+                                ]
 export const Fieldoperation = (num)=>
 {
     return(
@@ -14,3 +14,17 @@ export const Fieldoperation = (num)=>
         </>
     );
 }                     
+
+export const  FilterSearchCategory ={
+    field:"title"
+}
+
+export const datainfoProduct =[
+    {field:"id" , title:"#"},
+    {field:"title" , title:"عنوان"},
+    {field:"category" ,title:"عنوان دسته بندی"},   
+    {field:"price" , title :"قیمت"} ,
+    {field:"stock",title:"موجودی"},
+    {field:"numLike",title:"تعداد لایک"},
+    {field:"status" , title:"وضعیت"},   
+   ]

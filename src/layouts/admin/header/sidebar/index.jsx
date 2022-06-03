@@ -13,33 +13,33 @@ const Sliderbar = () => {
                 <div className="p-0 m-0">
                     <UserInfo name="Mohammad" image="/assets/images/avatar/user2.jpg" />
                     {/* active */}
-                    <SidebarGroupItem title={"داشبورد"}  icon={"fas fa-tachometer-alt"} />
+                    <SidebarGroupItem targetpath={"/"} title={"داشبورد"}  icon={"fas fa-tachometer-alt"} />
                     {/* <!-- =================================== --> */}
 
                     < SidebarGroupTitle title={"فروشگاه"} />
-                    <SidebarGroupItem title={"مدیریت گروه محصول"}  icon={"fas fa-stream"} />
-                    <SidebarGroupItem title={"مدیریت محصول"}  icon={"fas fa-cube"}/>
-                    <SidebarGroupItem title={"مدیریت برند ها"}  icon={"fas fa-copyright"}/>
-                    <SidebarGroupItem title={"مدیریت گارانتی ها"}  icon={"fab fa-pagelines"}/>
-                    <SidebarGroupItem title={"مدیریت رنگ ها"} icon={"fas fa-palette"} />
-                    <SidebarGroupItem title={"مدیریت تخفیف ها"}  icon={"fas fa-percentage"}/>                   
+                    <SidebarGroupItem targetpath={"/category"} title={"مدیریت گروه محصول"}  icon={"fas fa-stream"} />
+                    <SidebarGroupItem targetpath={"/product"} title={"مدیریت محصول"}  icon={"fas fa-cube"}/>
+                    <SidebarGroupItem targetpath={"/"} title={"مدیریت برند ها"}  icon={"fas fa-copyright"}/>
+                    <SidebarGroupItem targetpath={"/"} title={"مدیریت گارانتی ها"}  icon={"fab fa-pagelines"}/>
+                    <SidebarGroupItem targetpath={"/"} title={"مدیریت رنگ ها"} icon={"fas fa-palette"} />
+                    <SidebarGroupItem targetpath={"/"} title={"مدیریت تخفیف ها"}  icon={"fas fa-percentage"}/>                   
 
                     {/* <!-- =================================== --> */}
 
                     <SidebarGroupTitle title={"سفارشات و سبد"} />
-                    <SidebarGroupItem title={"مدیریت سبد خرید "} icon={"fas fa-shopping-basket"}/>                 
-                    <SidebarGroupItem title={"مدیریت سفارشات"} icon={"fas fa-luggage-cart"} />                   
-                    <SidebarGroupItem title={"مدیریت نحوه ارسال"} icon={"fas fa-truck-loading"}/> 
+                    <SidebarGroupItem targetpath={"/test"} title={"مدیریت سبد خرید "} icon={"fas fa-shopping-basket"}/>                 
+                    <SidebarGroupItem targetpath={"/test"} title={"مدیریت سفارشات"} icon={"fas fa-luggage-cart"} />                   
+                    <SidebarGroupItem targetpath={"/test"} title={"مدیریت نحوه ارسال"} icon={"fas fa-truck-loading"}/> 
                     {/* <!-- =================================== --> */}
                     <SidebarGroupTitle title={"کاربران و همکاران"} />
 
-                    <SidebarGroupItem title={"مشاهده کاربران"} icon={"fas fa-users "}/> 
-                    <SidebarGroupItem title={"نقش ها"} icon={"fas fa-user-tag"}/> 
-                    <SidebarGroupItem title={"مجوز ها"} icon={"fas fa-shield-alt "}/> 
+                    <SidebarGroupItem targetpath={"/test"} title={"مشاهده کاربران"} icon={"fas fa-users "}/> 
+                    <SidebarGroupItem targetpath={"/test"} title={"نقش ها"} icon={"fas fa-user-tag"}/> 
+                    <SidebarGroupItem targetpath={"/test"} title={"مجوز ها"} icon={"fas fa-shield-alt "}/> 
                     {/* <!-- =================================== --> */}
                     <SidebarGroupTitle title={"ارتباطات"} />
-                    <SidebarGroupItem title={"سوال ها"} icon={"fa-question-circle"}/> 
-                    <SidebarGroupItem title={"نظرات"} icon={"fa-comment"}/> 
+                    <SidebarGroupItem targetpath={"/test"} title={"سوال ها"} icon={"fa-question-circle"}/> 
+                    <SidebarGroupItem targetpath={"/test"} title={"نظرات"} icon={"fa-comment"}/> 
                     {/* <!-- <li className="py-2 btn-group dropstart pe-4">
                     <i className="ms-3 icon fas fa-check text-light"></i>
                     <span className="hiddenable" data-bs-toggle="dropdown" aria-expanded="false">داشبورد</span>
