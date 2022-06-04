@@ -19,7 +19,7 @@ const Sliderbar = () => {
                     < SidebarGroupTitle title={"فروشگاه"} />
                     <SidebarGroupItem targetpath={"/category"} title={"مدیریت گروه محصول"}  icon={"fas fa-stream"} />
                     <SidebarGroupItem targetpath={"/product"} title={"مدیریت محصول"}  icon={"fas fa-cube"}/>
-                    <SidebarGroupItem targetpath={"/"} title={"مدیریت برند ها"}  icon={"fas fa-copyright"}/>
+                    <SidebarGroupItem targetpath={"/Company"} title={"مدیریت برند ها"}  icon={"fas fa-copyright"}/>
                     <SidebarGroupItem targetpath={"/"} title={"مدیریت گارانتی ها"}  icon={"fab fa-pagelines"}/>
                     <SidebarGroupItem targetpath={"/"} title={"مدیریت رنگ ها"} icon={"fas fa-palette"} />
                     <SidebarGroupItem targetpath={"/"} title={"مدیریت تخفیف ها"}  icon={"fas fa-percentage"}/>                   

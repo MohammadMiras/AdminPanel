@@ -28,3 +28,32 @@ export const datainfoProduct =[
     {field:"numLike",title:"تعداد لایک"},
     {field:"status" , title:"وضعیت"},   
    ]
+
+ export const datainfoCompany=[
+    {field:"id" , title:"#"},
+    {field:"Name" , title:"عنوان"},
+    {field:"Logo" ,title:"لوگو"},   
+    {field:"Description" , title :"توضیحات"}
+    ]  
+
+ export const  FilterSearchCompany ={
+        field:"Name"
+    }   
+
+export const datainfocolor =[
+    {field:"id" , title:"#"},
+    {field:"title" ,title:"عنوان"},
+    {field:"ColorCode" ,title:"کد رنگ"},
+    {field:"Color" , title:"رنگ"}
+]
+export const FieldoperationDelete = (num)=>
+{
+    return(
+        <>
+        <i className="fas fa-times text-danger mx-1 hoverable_text pointer has_tooltip" 
+            title="حذف" 
+            data-bs-toggle="tooltip" 
+            data-bs-placement="top"></i>
+        </>
+    );
+} 
