@@ -3,14 +3,39 @@ import { Form, Formik } from 'formik';
 import * as Yup from 'yup';
 import AuthFilterControl from '../../components/AuthFilter/AuthFilterControl';
 
+import { useNavigate } from 'react-router-dom';
+
+import { Alert } from '../../Utility/Alert';
+import HttpService from '../../Services/HttpServies';
+
 
 const initialValues ={
     phone: "",
     password: "",
     remember:false
 }
-const onSubmit = (values)=>{
-    console.log(values);
+const onSubmit = (values ,navigate , submitMathods)=>{
+
+    HttpService
+            (
+                '/auth/login',
+                'post' ,
+                {...values,remember:values.remember? 1 : 0}
+            ).then
+            (
+                res=>{
+                if(res.status === 200)
+                {
+                    submitMathods.setSubmitting(false)
+                    localStorage.setItem('LoginUser',JSON.stringify(res.data))
+                    navigate('/')
+                }
+                else{
+                        submitMathods.setSubmitting(false)
+                        Alert("خطا",res.data.message,"error")
+                    }
+                }
+            ).catch(error=>{console.log(error);})
 }
 const validationSchema = Yup.object({
     phone:Yup.number().required('لطفا این قسمت را پر کنید'),
@@ -22,10 +47,11 @@ const validationSchema = Yup.object({
 })
 
 const Login = () => {
+    const navigate = useNavigate();
     return (
                 <Formik
                 initialValues={initialValues}
-                onSubmit={onSubmit}
+                onSubmit={(values,submitMathods)=>onSubmit(values,navigate ,submitMathods)}
                 validationSchema={validationSchema}
                 >
                     {
@@ -67,8 +93,8 @@ const Login = () => {
                                         </div>
                                         
                                         <div className="container-login100-form-btn">
-                                            <button className="login100-form-btn">
-                                                ورود
+                                            <button className="login100-form-btn" disabled={formik.isSubmitting}>
+                                                {formik.isSubmitting ?("لطفا صبر کنید...."):("ورود")}
                                             </button>
                                         </div>
                                       

@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const LeftContent = () => {
     return (
@@ -22,7 +23,7 @@ const LeftContent = () => {
                 <hr />
                 <li className="d-flex justify-content-center align-items-center px-2">
                     <i className="fas fa-power-off"></i>
-                    <a className="dropdown-item" href="#">خروج</a>
+                    <NavLink to="/Logout" className="dropdown-item" >خروج</NavLink>
                 </li>
             </ul>
             <i className="far fa-bell fa-2x mx-3 pointer position-relative">

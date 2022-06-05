@@ -1,0 +1,1 @@
+export const UrlApi = "https://ecomadminapi.azhadev.ir/api";

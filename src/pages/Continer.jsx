@@ -8,6 +8,7 @@ import Company from "./Company/Company";
 import AddCompany from  "./Company/AddCompany";
 import { Routes, Route } from "react-router-dom";
 import Login from "./auth/Login";
+import Logout from "./auth/Logout";
 const Continer = () => {
 
     return (
@@ -20,7 +21,7 @@ const Continer = () => {
                 <Route path="/Product" element={<Product/>} />
                 <Route path="/Company" element={<Company/>} />
                 <Route path="*" element={<Dashboard/>} />    
-               
+                <Route path="/Logout"  element={<Logout/>}/>
                            
             </Routes>
             <AddProduct />

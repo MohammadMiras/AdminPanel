@@ -1,13 +1,27 @@
 import Index from "./layouts/admin/Index";
-import {BrowserRouter} from 'react-router-dom';
+import {Navigate, useLocation} from 'react-router-dom';
 import AuthLayaut from  "./layouts/auth/AuthLayaut"
 
 function App() {
+  const location = useLocation();
+  const logintoken = localStorage.getItem('LoginUser')
   return (
-    <BrowserRouter>
-    {/* <Index/> */}
-    <AuthLayaut/>
-    </BrowserRouter>
+    <>
+    {
+      location.pathname.includes('/auth') ? (
+        <AuthLayaut/> 
+      ):(
+        <>
+          {
+            logintoken ? (<Index/>):(<Navigate to="/auth/login"/>)
+            
+          }
+        </>
+      )
+    }
+
+    </>
+    
 
     
   );
