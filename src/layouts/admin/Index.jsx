@@ -4,7 +4,6 @@ import { useContext } from "react";
 import { AdminContext, AdminContextContainer } from "../../context/adminLayoutContext";
 
 import Continer from "../../pages/Continer";
-
 import Header from "./header/index";
 
 const Index = () => {

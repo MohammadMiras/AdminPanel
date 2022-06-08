@@ -31,7 +31,7 @@ const Table = ({ data, datainfo, addFieldoperation ,children ,filterSearch }) =>
         console.log("$$"+initdata.length);
         setcurrentpage(1)
          // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[searchtext])
+    },[searchtext , data])
     return (
         <>
             <div className="row justify-content-between">
