@@ -1,7 +1,7 @@
 export const datainfoCategory =[
                                  {field:"id" , title:"#"},
                                  {field:"title" , title:"عنوان"},
-                                 {field:"status" , title:"وضعیت"}
+                                 {field:"is_active" , title:"وضعیت"}
                                 ]
 export const Fieldoperation = (num)=>
 {
